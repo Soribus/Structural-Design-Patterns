@@ -15,13 +15,8 @@ public class Container implements Component{
         content.remove(c);
     }
 
-    /**
-     * calculates the weight of the Container
-     * @return
-     */
     public int calculateWeight(){
-        //every box has a base weight of 1 gram
-        int totalWeight= 1;
+        int totalWeight = 0;
         for (Component c:content
              ) {
             totalWeight = totalWeight + c.calculateWeight();
