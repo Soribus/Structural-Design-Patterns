@@ -9,9 +9,11 @@ public class Client {
 
         Container mainContainer = new Container();
 
-        Container container1 = new Container();
-        Container container2 = new Container();
-        Container container3 = new Container();
+        Container großerContainer = new Container();
+        Container kleinerContainer_1 = new Container();
+        Container kleinerContainer_2 = new Container();
+        Container sehrKleinerContainer_1 = new Container();
+        Container sehrKleinerContainer_2 = new Container();
 
         Leaf leaf1 = new Leaf(1);
         Leaf leaf2 = new Leaf(2);
