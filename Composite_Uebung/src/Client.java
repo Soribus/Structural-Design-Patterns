@@ -20,6 +20,7 @@ public class Client {
         Leaf leaf3 = new Leaf(3);
         Leaf leaf4 = new Leaf(4);
         Leaf leaf5 = new Leaf(5);
+        Leaf leaf6 = new Leaf(6);
 
         //insert code here
 
