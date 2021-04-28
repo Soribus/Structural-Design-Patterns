@@ -1,20 +1,15 @@
 import java.util.Base64;
 
-public class EncryptionDecorator extends DataSourceDecorator{
+public class EncryptionDecorator{
 
-    public EncryptionDecorator(DataSource source) {
-        super(source);
-    }
+    /*
+            Todo:
+            1. Erweitere EncryptionDecorator um DataSourceDecorator (extends ...).
+            2. Erzeuge den Konstruktur von EncryptionDecorator.
+            3. Überschreibe die vererbten Methoden writeData und readData mit Hilfe der Methoden "encode"
+                und "decode"
+     */
 
-    @Override
-    public void writeData(String data) {
-        super.writeData(encode(data));
-    }
-
-    @Override
-    public String readData() {
-        return decode(super.readData());
-    }
 
     private String encode(String data) {
         byte[] result = data.getBytes();

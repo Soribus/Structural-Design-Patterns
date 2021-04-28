@@ -7,13 +7,18 @@ import java.util.zip.Deflater;
 import java.util.zip.DeflaterOutputStream;
 import java.util.zip.InflaterInputStream;
 
-public class CompressionDecorator extends DataSourceDecorator{
+public class CompressionDecorator{
+
+        /*
+                Todo:
+                1. Erweitere CompressionDecorator um DataSourceDecorator (extends ...).
+                2. Erzeuge den Konstruktur von CompressionDecorator.
+                3. Überschreibe die vererbten Methoden writeData und readData mit Hilfe der Methoden "compress"
+                    und "decompress"
+         */
 
     private int compLevel = 6;
 
-    public CompressionDecorator(DataSource source) {
-        super(source);
-    }
 
     public int getCompressionLevel() {
         return compLevel;
@@ -23,15 +28,6 @@ public class CompressionDecorator extends DataSourceDecorator{
         compLevel = value;
     }
 
-    @Override
-    public void writeData(String data) {
-        super.writeData(compress(data));
-    }
-
-    @Override
-    public String readData() {
-        return decompress(super.readData());
-    }
 
     private String compress(String stringData) {
         byte[] data = stringData.getBytes();
