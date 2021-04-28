@@ -9,13 +9,23 @@ public class Client {
 
         Container mainContainer = new Container();
 
+        Container container1 = new Container();
+        Container container2 = new Container();
+        Container container3 = new Container();
+
+        Leaf leaf1 = new Leaf(1);
+        Leaf leaf2 = new Leaf(2);
+        Leaf leaf3 = new Leaf(3);
+        Leaf leaf4 = new Leaf(4);
+        Leaf leaf5 = new Leaf(5);
+
         //insert code here
 
         mainContainer.calculateWeight();
 
     }
 
-    //Frage: Warum kann ich Blätter und Container nicht einfach direkt dem Container als Child mitgeben?
+    //Frage: Warum kann ich Blätter und Container nicht einfach direkt dem Container als Child mitgeben ohne Component Interface?
     //Wozu brauche ich das Interface in diesem Beispiel und wie würde es anders auch gehen?
     //Bedenke dass ein Container sowohl andere Container als auch Blätter beinhalten kann.
 }

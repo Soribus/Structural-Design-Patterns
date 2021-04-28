@@ -1,25 +1,28 @@
-import java.util.List;
+import java.util.*;
 
-public class Container implements Component{
+public class Container implements Component {
 
     /**
      * The content of the Container
      */
-    private List<Component> content;
+    private List<Component> content = new ArrayList<Component>();
 
-    public void add(Component c){
+
+    public void add(Component c) {
         content.add(c);
     }
 
-    public void remove(Component c){
+    public void remove(Component c) {
         content.remove(c);
     }
 
-    public int calculateWeight(){
+    public int calculateWeight() {
         int totalWeight = 0;
-        for (Component c:content
-             ) {
-            totalWeight = totalWeight + c.calculateWeight();
+        if (!content.isEmpty()) {
+            for (Component c : content
+            ) {
+                totalWeight = totalWeight + c.calculateWeight();
+            }
         }
         return totalWeight;
     }
