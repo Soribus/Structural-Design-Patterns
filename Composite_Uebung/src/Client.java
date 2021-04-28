@@ -23,7 +23,7 @@ public class Client {
 
         //insert code here
 
-        mainContainer.calculateWeight();
+        System.out.println(mainContainer.calculateWeight());
 
     }
 
