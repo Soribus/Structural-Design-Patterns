@@ -1,7 +1,7 @@
 # Bridge Pattern
 Sie wollen das Couch-Potatoe-Dasein optimieren.
 Aus diesem Grund entwickeln Sie neue ergonomische, benutzerfreundliche und
-universelle Fernbedienung für diverse Geräte (Tv, Radio, etc.)
+universelle Fernbedienungen für diverse Geräte (Tv, Radio, etc.)
 
 Sie führen zwei verschiedene Fernbedienungen:
 * eine kleine mit Basisfunktionalitäten wie dem Ein-/Ausschalten von Geräten, dem Regulieren von Lautstärke sowie das Rauf-
