@@ -7,6 +7,7 @@ Jedes Paket kann einzelne Pakete beinhalten die entweder leer sind oder Blätter
 
 
 Aufgabe:
+Öffnen sie die Client Klasse.
 Erstellen sie einen Container der 2 eigene Container beinhaltet. 
 Diese beinhalten wiederum jeweils 2 Blätter(Leaf) mit unterschiedlichem Gewicht und einen weiteren Container mit 1 Blatt (Leaf).
 Von dem großen Container soll das Gesamtgewicht berechnet werden.
